@@ -1,0 +1,24 @@
+.flex1 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.flex2 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.flex3 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.flex4 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
