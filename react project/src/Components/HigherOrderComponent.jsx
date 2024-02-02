@@ -12,21 +12,29 @@ function HigherOrderComponent() {
 
   return (
     <div>
-      <div>
+      <h2>Display all items</h2>
+      <div style={{ border: '1.5px solid black', textAlign: 'center' }}>
         {state.map(function (element, index) {
           // console.log(element,"P")
 
           return (
             <div key={index} className="flex1">
-              Id: {element.id}{"  "}
-              Name: {element.name}{"  "}
-              User-Type: {element.user_type}
+              <div>
+                Id: {element.id}
+                {'  '}
+              </div>
+              <div>
+                Name: {element.name}
+                {'  '}
+              </div>
+              <div>User-Type: {element.user_type}</div>
             </div>
           );
         })}
       </div>
       <hr />
-      <div>
+      <h2>Display based on user type</h2>
+      <div style={{ border: '1.5px solid black', textAlign: 'center' }}>
         {state
           .filter(function (element, index) {
             return element.user_type == 'Designer';
@@ -35,48 +43,81 @@ function HigherOrderComponent() {
             // console.log(element,"P")
 
             return (
-              <div key={index} className='flex2'>
-                Id: {element.id}{"  "}
-                Name: {element.name}{"  "}
-                User-Type: {element.user_type}{"  "}
+              <div key={index} className="flex2">
+                <div>
+                  Id: {element.id}
+                  {'  '}
+                </div>
+                <div>
+                  Name: {element.name}
+                  {'  '}
+                </div>
+                <div>
+                  User-Type: {element.user_type}
+                  {'  '}
+                </div>
               </div>
             );
           })}
       </div>
       <hr />
-      <div>
+      <h2>Filter all data starting with "J"</h2>
+      <div style={{ border: '1.5px solid black', textAlign: 'center' }}>
         {state
           .filter(function (element, index) {
             return element.name[0] == 'J';
           })
           .map(function (element, index) {
             return (
-              <div key={index} className='flex3'>
-                Id: {element.id}{"  "}
-                Name: {element.name}{"  "}
-                User-Type: {element.user_type}{"  "}
+              <div key={index} className="flex3">
+                <div>
+                  Id: {element.id}
+                  {'  '}
+                </div>
+                <div>
+                  Name: {element.name}
+                  {'  '}
+                </div>
+                <div>
+                  User-Type: {element.user_type}
+                  {'  '}
+                </div>
               </div>
             );
           })}
       </div>
       <hr />
-      <div>
+      <h2>
+        Filter all data based on age greater than 28 annd age less than or equal
+        to 50
+      </h2>
+      <div style={{ border: '1.5px solid black', textAlign: 'center' }}>
         {state
           .filter(function (element, index) {
             return element.age >= 28 && element.age <= 50;
           })
           .map(function (element, index) {
             return (
-              <div key={index} className='flex4'>
-                Id: {element.id}{"  "}
-                Name: {element.name}{"  "}
-                User Type: {element.user_type}{"  "}
+              <div key={index} className="flex4">
+                <div>
+                  Id: {element.id}
+                  {'  '}
+                </div>
+                <div>
+                  Name: {element.name}
+                  {'  '}
+                </div>
+                <div>
+                  User Type: {element.user_type}
+                  {'  '}
+                </div>
               </div>
             );
           })}
       </div>
       <hr />
-      <div>
+      <h2>Find the total years of the designers</h2>
+      <div style={{ border: '1.5px solid black'}}>
         {state
           .filter(function (element, index) {
             return element.user_type == 'Designer';

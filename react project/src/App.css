@@ -3,22 +3,37 @@
   display: flex;
   justify-content: space-between;
   height: 40px;
+  margin-left: 50px;
+  color: blue;
+  width: 500px;
 }
 .flex2 {
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   height: 40px;
+  margin-left: 50px;
+  color: blue;
+  width: 500px;
 }
 .flex3 {
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   height: 40px;
+  margin-left: 50px;
+  color: blue;
+  width: 500px;
 }
 .flex4 {
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   height: 40px;
+  margin-left: 50px;
+  color: blue;
+  width: 500px;
+}
+h2{
+  text-align: center;
 }
